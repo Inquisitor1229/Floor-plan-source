@@ -1,0 +1,184 @@
+.about-work {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1920px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-top: 40px;
+  padding-bottom: 55px;
+
+  &__header {
+    display: none;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__caption {
+    font-size: 38px;
+    font-weight: 600;
+    color: #000000;
+  }
+
+  &__accordeon {
+    display: flex;
+    margin-top: 35px;
+  }
+
+  &__accordeon-container2 {
+    position: relative;
+  }
+
+  &__accordeon-container {
+    max-height: 355px;
+    max-width: 355px;
+    width: 100%;
+  }
+
+  &__item {
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-head {
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+
+    a {
+      color: #000000;
+      font-size: 21px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    &:hover {
+      background-color: #4FA171;
+    }
+  }
+
+  &__item-head.show 
+  { 
+    .about-work__head-pic {
+    filter: brightness(0) invert(1);
+    }
+
+    .about-work__arrow {
+      transform: rotate(90deg);
+      filter: brightness(0) invert(1);
+    }
+
+    .about-work__item-container {
+      background: #498763;
+    }
+
+    .about-work__head-marker {
+      background-color: #4FA171;
+    }
+  }
+
+  &__item-container {
+    display: flex;
+    height: 70px;
+  }
+
+  &__head-marker {
+    min-width: 7px;
+    background-color: #B1987F;
+  }
+
+  &__head-pic {
+    margin-left: 10px;
+    min-width: 12.43%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__head-title {
+    margin-left: 13px;
+    padding-bottom: 10px;
+    padding-top: 13px;
+    min-width: 250px;
+    max-width: 250px;
+    align-self: center;
+  }
+
+  &__arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: flex-end;
+    transition: 0.3s;
+  }
+
+  &__item-body {
+    display: none;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+
+  &__body-container {
+    display: flex;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  &__body-marker {
+    background-color: #498763;
+    min-width: 7px;
+  } 
+
+  &__item-text {
+    padding: 12px 0 12px 13px;
+    font-size: 18px;
+    color: #000000;
+    max-width: 345px;
+  }
+  
+  &__slides {
+    position: relative;
+    height: 422px;
+    margin-left: 10px;
+    width: 600px;
+    overflow: hidden;
+  }
+
+  &__slides-bg {
+    position: absolute;
+    right: 0;
+  }
+
+  &__slide {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    &.active {
+      display: flex;
+    }
+ }
+}
+
+
+
+
+
+
+
+

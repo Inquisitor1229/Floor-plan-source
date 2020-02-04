@@ -1,0 +1,73 @@
+section.design-cost
+  .design-cost-container
+    h2.design-cost__header Расчет стоимости дизайна интерьера
+    .design-cost__frame
+      form.design-cost__calculation
+        .design-cost__type-category
+          span.design-cost__category-title 1. Выберите тип помещения:
+          .design-cost__category-container
+            .design-cost__category-item.design-cost__category-item--type
+              input(name="type" type="radio" value="house" checked)#type1
+              label(for="type1").design-cost__category-label
+                a.design-cost__category-marker
+                img(src="img/apartment1.png" alt="apartment").design-cost__category-img
+                span.design-cost__category-name Дом/коттедж
+            .design-cost__category-item.design-cost__category-item--type
+              input(name="type" type="radio" value="appart")#type2
+              label(for="type2").design-cost__category-label
+                a.design-cost__category-marker
+                img(src="img/apartment2.png" alt="apartment").design-cost__category-img
+                span.design-cost__category-name Квартира
+            .design-cost__category-item.design-cost__category-item--type
+              input(name="type" type="radio" value="office")#type3
+              label(for="type3").design-cost__category-label
+                a.design-cost__category-marker
+                img(src="img/apartment3.png" alt="apartment").design-cost__category-img
+                span.design-cost__category-name Офис
+            .design-cost__category-item.design-cost__category-item--type
+              input(name="type" type="radio" value="other")#type4
+              label(for="type4").design-cost__category-label
+                a.design-cost__category-marker
+                img(src="img/apartment4.png" alt="apartment").design-cost__category-img
+                span.design-cost__category-name Др. помещение
+        .design-cost__size-category
+          span.design-cost__category-title 2. Введите размер помещения:
+          input(name="size" type="text" placeholder="Например: 120").design-cost__category-size
+        .design-cost__style-category
+          span.design-cost__category-title 3. Выберите стиль:
+          .design-cost__category-container
+            .design-cost__category-item.design-cost__category-item--style
+              input(name="style" type="radio" value="classic" checked)#style1
+              label(for="style1").design-cost__category-label
+                a.design-cost__category-marker
+                span.design-cost__category-name Классика
+            .design-cost__category-item.design-cost__category-item--style
+              input(name="style" type="radio" value="modern")#style2
+              label(for="style2").design-cost__category-label
+                a.design-cost__category-marker
+                span.design-cost__category-name Модерн
+            .design-cost__category-item.design-cost__category-item--style
+              input(name="style" type="radio" value="loft")#style3
+              label(for="style3").design-cost__category-label
+                a.design-cost__category-marker
+                span.design-cost__category-name Лофт
+            .design-cost__category-item.design-cost__category-item--style
+              input(name="style" type="radio" value="skandinav")#style4
+              label(for="style4").design-cost__category-label
+                a.design-cost__category-marker
+                span.design-cost__category-name Скандинав.
+            .design-cost__category-item.design-cost__category-item--style
+              input(name="style" type="radio" value="eco")#style5
+              label(for="style5").design-cost__category-label
+                a.design-cost__category-marker
+                span.design-cost__category-name ЭКО-стиль
+            .design-cost__category-item.design-cost__category-item--style
+              input(name="style" type="radio" value="cons")#style6
+              label(for="style6").design-cost__category-label
+                a.design-cost__category-marker
+                span.design-cost__category-name Консультация
+        button.design-cost__cost-btn
+          span Рассчитать стоимость дизайна интерьера
+          img(src="img/arrow-b.png" alt="arrow")
+      .design-cost__comment
+        span Вы получите стоимость по выбранному способу связи в течение дня

@@ -1,0 +1,46 @@
+section.about-work
+  h2.about-work__header Формат работы
+  .about-work-container
+    span.about-work__caption За 10 лет мы выработали наиболее удобный формат работы:
+    .about-work__accordeon
+      .about-work__accordeon-container
+        .about-work__accordeon-container2
+          - let head = ["Этап 1. Замеры", "Этап 2. Планировочное решение", "Этап 3. Визуальная часть проекта", "Этап 4. Рабочие чертежи и расчет материалов"]
+          - let img = ["img/stage1.png", "img/stage2.png", "img/stage3.png", "img/stage4.png"]
+          - let text = ["Дизайнер выезжает на ваш объект, делает замеры помещения, выясняет ваши требования к интерьеру и составляет подробное ТЗ", "Разрабатываем 5-6 вариантов планировки вашего помещения и на личной встрече с вами утверждаем наиболее подходящий вариант", "Продумываем концепцию, цветовую гамму и общий стиль интерьера, после чего разрабатываем 2D коллажи или 3D визуализацию", "Мы работаем напрямую с поставщиками материалов и мебели – поможем подобрать все необходимое, а также передадим вам рабочие чертежи для строителей, сантехников и др."]
+          - for (x = 0; x<4; x++)
+            .about-work__item
+              if x==0
+                .about-work__item-head.about-work__item-head--active
+                  .about-work__item-container
+                    a.about-work__head-marker
+                    a.about-work__head-pic
+                      img(src=img[x] alt="stage")
+                    a(href="#").about-work__head-title
+                      h3=head[x]
+                    a.about-work__arrow
+                      img(src="img/arrow.png" alt="arrow")
+              else
+                .about-work__item-head
+                  .about-work__item-container
+                    a.about-work__head-marker
+                    a.about-work__head-pic
+                      img(src=img[x] alt="stage")
+                    a(href="#").about-work__head-title
+                      h3=head[x]
+                    a.about-work__arrow
+                      img(src="img/arrow.png" alt="arrow")
+              .about-work__item-body
+                .about-work__body-container
+                  .about-work__body-marker
+                  p.about-work__item-text=text[x]
+      .about-work__slides
+        .about-work__slide.active
+          img(src="img/s1.jpg" alt="slide")
+        .about-work__slide
+          img(src="img/s2.jpg" alt="slide")
+        .about-work__slide
+          img(src="img/s3.jpg" alt="slide")
+        .about-work__slide
+          img(src="img/s4.jpg" alt="slide")
+        img(src="img/frame_right.png" alt="frame").about-work__slides-bg
